@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sly的博客 | 个人随笔</title>
+<style>
+  :root{
+    --ink:#3a3f44;
+    --accent:#7d9b9a;
+    --muted:#9aa4ad;
+    --bg:#fbfbfa;
+    --card:#ffffff;
+    --line:#eceff1;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"Noto Serif SC","Songti SC","SimSun",serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.9;
+  }
+  /* 头部 */
+  header{
+    text-align:center;
+    padding:4.5rem 1rem 2.8rem;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#f4f7f7 0%,var(--bg) 100%);
+  }
+  header h1{
+    font-size:2.1rem;
+    letter-spacing:.12em;
+    color:var(--accent);
+    font-weight:600;
+  }
+  header p{
+    color:var(--muted);
+    margin-top:.6rem;
+    font-size:.95rem;
+    letter-spacing:.2em;
+  }
+  nav{margin-top:1.5rem;}
+  nav a{
+    color:var(--muted);
+    text-decoration:none;
+    margin:0 1rem;
+    font-size:.92rem;
+    letter-spacing:.1em;
+  }
+  nav a:hover{color:var(--accent);}
+  /* 主区域 */
+  main{
+    max-width:740px;
+    margin:2.8rem auto 4rem;
+    padding:0 1.2rem;
+  }
+  article{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:1.9rem 2.1rem;
+    margin-bottom:1.8rem;
+    box-shadow:0 1px 8px rgba(125,155,154,.05);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  article:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 20px rgba(125,155,154,.12);
+  }
+  article .date{
+    color:var(--muted);
+    font-size:.8rem;
+    letter-spacing:.1em;
+    margin-bottom:.5rem;
+  }
+  article h2{
+    font-size:1.28rem;
+    color:var(--ink);
+    margin-bottom:.7rem;
+    cursor:pointer;
+    font-weight:600;
+  }
+  article h2:hover{color:var(--accent);}
+  article .excerpt{
+    color:#5a6167;
+    font-size:.95rem;
+    text-align:justify;
+  }
+  article .more{
+    display:inline-block;
+    margin-top:.9rem;
+    color:var(--accent);
+    text-decoration:none;
+    font-size:.92rem;
+  }
+  article .more:hover{text-decoration:underline;}
+  /* 页脚 */
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:.82rem;
+    padding:2rem 1rem 3rem;
+    border-top:1px solid var(--line);
+    letter-spacing:.08em;
+  }
+  @media (max-width:600px){
+    header h1{font-size:1.6rem;}
+    article{padding:1.4rem 1.2rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>sly的博客</h1>
+  <p>随 笔 · 生 活 · 思 考</p>
+  <nav>
+    <a href="#">首页</a>
+    <a href="#">归档</a>
+    <a href="#">关于我</a>
+  </nav>
+</header>
+
+<main>
+
+  <article>
+    <div class="date">2026 / 10 / 08</div>
+    <h2>秋日里的第一杯热茶</h2>
+    <p class="excerpt">
+      天气转凉的这几天，傍晚总喜欢泡一杯热茶坐在窗边。水汽缓缓升起，窗外的天色一点点暗下来。
+      这样的时刻什么也不想做，就只是发呆。生活大多数时候是匆忙的，而偷来的这几分钟清闲，
+      反而成了一天里最珍贵的部分。也许幸福本来就不需要什么宏大的理由……
+    </p>
+    <a class="more" href="#">继续阅读 →</a>
+  </article>
+
+  <article>
+    <div class="date">2026 / 09 / 25</div>
+    <h2>关于慢下来的想法</h2>
+    <p class="excerpt">
+      最近一直在思考一个问题：为什么我们总是在赶？赶地铁、赶 deadline、赶一个又一个目标。
+      上周我试着把手机调成静音，完整地读完了一本书，那种专注的感觉久违了。
+      慢不是懒惰，而是一种选择——选择在快得让人眩晕的世界里，给自己留一块可以深呼吸的地方……
+    </p>
+    <a class="more" href="#">继续阅读 →</a>
+  </article>
+
+  <article>
+    <div class="date">2026 / 09 / 10</div>
+    <h2>搬家记：和一些旧物告别</h2>
+    <p class="excerpt">
+      整理旧物的时候翻出了很多 forgotten 的东西：褪色的电影票根、写了半页的日记、
+      朋友送的卡片。它们大多不再有用，却每一件都装着一段回忆。扔掉的和留下的，都是生活的一部分。
+      新家很小，但阳光很好。有些告别不是结束，而是把回忆妥帖地收好，继续往前走……
+    </p>
+    <a class="more" href="#">继续阅读 →</a>
+  </article>
+
+  <article>
+    <div class="date">2026 / 08 / 28</div>
+    <h2>为什么开始写博客</h2>
+    <p class="excerpt">
+      开通这个博客，其实是想给自己的生活留一个出口。朋友圈太吵，日记太私密，
+      而博客刚刚好——写给愿意停下来读的人，也写给未来的自己。不为流量，不为点赞，
+      只是想诚实地记录：读过什么书，走过什么路，想过什么问题。如果某一篇恰好也打动了你，那就更好了……
+    </p>
+    <a class="more" href="#">继续阅读 →</a>
+  </article>
+
+</main>
+
+<footer>
+  © 2026 sly的博客 · 慢慢写，认真生活
+</footer>
+
+</body>
+</html>
